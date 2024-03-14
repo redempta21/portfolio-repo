@@ -1,6 +1,8 @@
 body {
 overflow-x: hidden;
 background-color: rgb(103, 95, 95);
+margin-left: 0px;
+width: 100%;
 }
 .container {
   width: 100%;
@@ -14,7 +16,7 @@ width: 100%;
 height: 70px;
 transition: background-color 0.3s;
 background-color: #333;
-color: white;
+text-align: start;
 }
 .ricon {
 width: 40px;
@@ -50,6 +52,63 @@ margin-left: 25px;
     color: blue;
     
     }
+   @media(max-width: 700px) {
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      transition: background-color 0.3s;
+      background-color: #333;
+      }
+      .ricon {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+        margin-top: 7px;
+        }  
+      .portfolio {
+          margin-top: 15px;
+          margin-left: 40px;
+          font-family: 'Courier New', Courier, monospace;
+          font-size: 10px;
+          }
+          .home {
+            margin-left: 10px;
+            color: white;
+            margin-top: 15px;
+            cursor: pointer;
+            font-size: 7px;
+            }
+            .about {
+              margin-top: 15px;
+              color: white;
+              margin-left: 10px;
+              cursor: pointer;
+              font-size: 7px;
+              }
+              nav {
+                display: flex;
+                flex-direction: row;
+                margin-left: 20px;
+              }
+              ul {
+                margin-left: 20px;
+               
+              }
+        nav ul li a {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                padding: 4px 8px;
+                transition: background-color 0.3s;
+                background-color: #333;
+                font-size: 7px;
+                margin-left: 20px;
+              }
+   }
+
+
+
     .hey {
     margin-top: 00px;
     color:white;
@@ -78,7 +137,6 @@ margin-top: 200px;
 margin-left: 20px;
 font-size: 20px;
 color:white;
-opacity:;
 transform: translateY(50px);
 transition: opacity 0.5s, transform 0.5s;
 }
@@ -130,10 +188,88 @@ height: 50px;
     .download:hover {
     background-color: rgb(71, 71, 216);   
     }
+    @media(max-width: 700px) {
+      .pragraphs {
+        margin-top: 100px;
+        margin-left: 20px;
+        font-size: 10px;
+        color:white;
+        transform: translateY(50px);
+        transition: opacity 0.5s, transform 0.5s;
+        text-align: left;
+        }
+        .hey {
+          margin-top: 00px;
+          color:white;
+          margin-left: 10px;
+          text-align: left;
+          }
+          .h2 {
+           left: 0px;
+            margin-top: 10px;  
+            font-size: 15px;
+            color:white;
+              }
+              .h-image {
+                display: flex;
+                flex-direction: row;
+                margin-left: 10px;
+                
+              
+                }
+        .coding {
+           margin-left: 0px;
+           margin-top: 0px;
+           font-size: 13px;
+            }
+          
+          span {
+          color: rgb(216, 216, 93);
+          }
+      .and {
+      font-size: 13px;
+      margin-top: 5px;
+      }
+      .socialmedia {
+        display: flex;
+        flex-direction: row;
+        margin-left: 15px;
+        margin-top: 15px;
+        }
+        .facebook {
+          width: 20px;
+          height: 20px;
+          }
+          .download {
+            background-color: rgb(88, 62, 234);
+        color: white;
+        width: 100px;
+        height: 30px;
+        border: none;
+        margin-top: 20px;
+        margin-left: 20px;
+        cursor: pointer;
+        }
+        .image {
+          width: 100px;
+          height: 100px;
+          margin-top: 150px;
+          margin-left: 5px;
+          border-radius: 100px;
+          cursor: pointer;
+          margin-right: 70px;
+          } 
+          .develop {
+            margin-left: 165px;
+            font-size: 10px;
+            color: white;
+            }
+    }
+  
     .h2-me {
-    margin-top: 100px;
+    margin-top: 50px;
     color: white;
-    margin-left: 70px;
+    margin-left: 20px;
     font-size: 50px;
     }
     .welcome {
@@ -171,6 +307,51 @@ height: 50px;
         margin-left: 30px;
         color: white;
         }
+        @media(max-width: 700px) {
+          .h2-me {
+            margin-top: 10px;
+            color: white;
+            margin-left: 170px;
+            font-size: 18px;
+            }
+            .front {
+              font-size: 13px;
+               margin-left: 30px;
+               color: white;
+               }
+              
+              .welcome {
+              margin-top: 20px;
+              margin-left: 10px;
+              color: white;
+              font-size: 10px;
+              }
+              .welcome1 {
+                font-size: 10px;
+                margin-left: 10px;
+                color: white;
+                }
+                .welcome2 {
+                  font-size: 10px;
+                  margin-left: 10px;
+                  color: white;
+                  }
+                  .welcome3 {
+                    font-size: 10px;
+                    margin-left: 10px;
+                    color: white;
+                    }
+                    .read {
+                      background-color: rgb(88, 62, 234);
+                      color: white;
+                      width: 100px;
+                      height: 35px;
+                      border: none;
+                      margin-top: 10px;
+                      margin-left: 70px;
+                      cursor: pointer;
+                     }
+        }
     .latest {
     margin-left: 450px;
     font-size: 50px;
@@ -178,7 +359,7 @@ height: 50px;
     margin-top: 70px;
     }
     .pic2 {
-    width: 300px;
+    width: 100%;
     height: 230px;
     margin-left: 100px;
     transition: .5s ease;
@@ -241,6 +422,38 @@ height: 50px;
     }
     .project-box:hover .project-layer {
       transform: translateY(0);
+    }
+    @media(max-width: 700px) {
+      .latest {
+        margin-left: 185px;
+        font-size: 15px;
+        color: white;
+        margin-top: 50px;
+        } 
+        .pic2 {
+          width: 50px;
+          height: 100px;
+          margin-left: 10px;
+          transition: .5s ease;
+          }
+        
+        .home1 {
+        margin-left: 20px;
+        color: green;
+        font-size: 5px;
+        }
+        .home2 {
+          margin-left: 20px;
+          color: green;
+          font-size: 5px;
+          }
+        .project-container {
+        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) ;
+        align-items: center;
+        gap: 1rem;
+        }
     }
     .contact {
       margin-top: 500px;
@@ -309,12 +522,15 @@ height: 50px;
       margin-left: 50px;
       border: none;
       background-color: rgb(202, 220, 99);
+     
       }
   
    .form2 {
     text-align: start;
     margin-left: 170px;
-    margin-top: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
     
    }
    .input2 {
@@ -326,6 +542,8 @@ height: 50px;
    .area {
     text-align: start;
     margin-left: 170px;
+    display: flex;
+    flex-direction: column;
    
    }
    .text {
@@ -407,7 +625,165 @@ margin-top: 0px;
     .project {
       margin-top: 200px;
     }
+    @media(max-width: 700px) {
+      body {
+        width: 100%;
+       margin-right: auto;
+      
+      }
+      .contact {
+        margin-top: 500px;
+       padding: 5px;
+       position: relative;
+       width: fit-content;
+       margin: auto;
+       margin-bottom: 0;
+       margin-left: 10px;
+       font-size: 20px;
+      }
+      .email {
+        margin-left: 00px;
+        font-size: 15px;
+        color: white;
+        margin-right: 3000px;
+       }
+       .prag {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 3000px;
+        margin-top: 100px;
+      }
+      .connect {
+        margin-left: 00px;
+        font-size: 15px;
+        margin-top: 20px;
+        color: white;
+        margin-right: 3000px;
+       }
+       .com {
+        margin-left: 00px;
+        font-size: 10px;
+        margin-top: 0px;
+        color: black;
+        margin-right: 3000px;
+       }
+       .socialmedia1 {
+        display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    margin-top: 0px
+  }
+  .facebook {
+    width: 15px;
+    height: 15px;
+    margin-top: 0px;
+   
+   }
+   .instagram {
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+    margin-top: 0px;
+    }
+    .get {
+      color: rgb(240, 240, 100);  
+      margin-left: 20px;
+      font-size: 10px;
+      font-weight: bold;
+      font-family: arial;
+      }
+      .get1 {
+        color: rgb(240, 240, 100);  
+        margin-left: 00px;
+        font-size: 10px;
+        font-weight: bold;
+        font-family: arial;
+        margin-right: 000px;
+        }
+        .form {
+          flex-wrap: wrap;
+          display: flex;
+          flex-direction: row;
+          width: 500px;
+          margin-left: 00px;
+          height: 40px;
+          margin-top: 30px;
+          
+         }
+         .input {
+          width: 30px;
+          height: 35px;
+          width: 60px;
+           background-color: rgb(202, 220, 99); border: none;
+           margin-left: 00px;
+         
+          }
+          .input1 {
+            margin-top: 30px;
+            width: 87px;
+            height: 35px;
+            margin-left: 10px;
+            border: none;
+            background-color: rgb(202, 220, 99);
+            }
+        
+         .form2 {
+          text-align: start;
+          margin-left: 00px;
+          margin-top: 30px;
+          
+         }
+         .input2 {
+          width: 160px;
+          height: 35px;
+          background-color: rgb(202, 220, 99);
+          border: none;
+          margin-left: 00px;
+          margin-top: 30px;
 
+         }
+         .area {
+          text-align: start;
+          margin-left: 00px;
+         
+         }
+         .text {
+          width: 160px;
+          height: 170px;
+          margin-top: 30px;
+          resize: none;
+          background-color: rgb(202, 220, 99);
+         }
+       
+         .read1 {
+          background-color: rgb(88, 62, 234);
+          color: white;
+          width: 170px;
+          height: 40px;
+          border: none;
+          margin-top: 10px;
+          margin-left: 00px;
+          cursor: pointer;
+          font-size: 20px;
+        }
+        .latest1 {
+          margin-left: 200px;
+        font-size: 20px;
+        color: white;
+        margin-top: 35px; 
+        }
+        .form {
+          flex-wrap: wrap;
+          display: flex;
+          flex-direction: row;
+          width: 500px;
+          margin-left: 00px;
+          height: 40px;
+          margin-top: 45px;
+          
+         }
+  }
     .footer {
       flex-wrap: wrap;
       transition: background-color 0.3s;
@@ -568,4 +944,27 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #555;
+}
+
+.input-group span {
+  position: realtive;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  font-size: 13px;
+  color: red;
+  font-weight: bold;
+}
+.required {
+  font-size: 13px;
+  color: red;
+  margin-left: 50px;
+  font-weight: bold;
+}
+.message {
+  font-size: 15px;
+  color: red;
+  font-weight: bold;
 }

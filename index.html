@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
     <link rel="stylesheet" href="portfolio.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio website</title>
 </head>
 <body>
+    
     <div class="container">
     <div class="navigation">
     <img class="ricon" src="https://up.yimg.com/ib/th?id=OIP.IghGz09M91TH4ExZDGOttAHaHm&%3Bpid=Api&rs=1&c=1&qlt=95&w=108&h=110">
@@ -140,17 +142,26 @@
         <div  class="contact-form">
          <form>
              <div class="form">
-                 <input  class="input" type="text" placeholder="Full name" id="fullname">
-                 <input  class="input1" type="email" placeholder="Email address" id="email">
+                <div class="input-group">
+                 <input  class="input" type="text" placeholder="Full name" id="full-name" onkeyup="validateName()">
+                 <span id="name-error" class="name"></span>
+                </div>
+                <div class="input-group">
+                 <input  class="input1" type="email" placeholder="Email address" id="contact-email" onkeyup="validateEmail()">
+                 <span id="email-error" class="required"></span>
+                </div>
              </div>
              <div class="form2">
-               <input class="input2" type="text" placeholder="Subject" id="subject">
+               <input class="input2" type="text" placeholder="Subject" id="contact-subject"  onkeyup="validateSubject()">
+               <span id="subject-error" class="name"></span>
              </div>
              <div class="area">
-             <textarea name="" id="textarea" class="text" cols="30" rows="10" placeholder="Type Your Message"></textarea>
+             <textarea   class="text" cols="30" rows="10" placeholder="Type Your Message"  id="contact-message"  onkeyup="validateMessage()"></textarea>
+             <span id="message-error" class="message"></span>
             </div>
             <div class="area">
-            <button type="submit" class="read1">Send Message</button>
+            <button type="submit" class="read1" onclick="return validateForm()">Send Message</button>
+            <span id="submit-error" class=name></span>
         </div>
          </form>
          <div class=" prag">
@@ -206,7 +217,7 @@
            <img class="call" src="https://up.yimg.com/ib/th?id=OIP.DHhrBGoy7wWj4LYNVHU5rQHaEK&%3Bpid=Api&rs=1&c=1&qlt=95&w=188&h=105">
            <img class="call1" src="https://up.yimg.com/ib/th?id=OIP.zDsa2MoFeghUwytLWnDKwwHaHa&%3Bpid=Api&rs=1&c=1&qlt=95&w=117&h=117">
             </div> 
-            <p>0781162202</p>
+            <p>0781162205</p>
         </div>
         <div class="about-me">
             <p class="about1">Follow me</p>
@@ -224,7 +235,6 @@
 
 </footer>
 <script src="https://unpkg.com/scrollreveal"></script>
-
 <script src="index.js"></script>
 </body>
 </html> 
